@@ -12,7 +12,7 @@ public class Login{
     }
     public void createUser() throws WrongPasswordException, WrongLoginException{
 
-        if (login.length()!= 6) throw new WrongLoginException();
+        if (login.length() > 10) throw new WrongLoginException();
         if (!password.equals(confirmPassword)) throw new WrongPasswordException();
 
         else System.out.println("The user is created!");
