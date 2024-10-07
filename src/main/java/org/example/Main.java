@@ -13,7 +13,7 @@ public class Main {
          "The user is created!"
         */
 
-        Login login = new Login("sadmin", "qwerty", "qwerty");
+        Login login = new Login("sysadmin", "qwerty", "qwerty");
         try{
             login.createUser();
         }catch (Exception e){
